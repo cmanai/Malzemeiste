@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    signingConfigs {
+        MalzemeKey {
+            keyAlias 'Malzemeiste.net'
+            keyPassword 'Malzeme2016'
+            storeFile file('E:/Chi/Work/Bilgiyazan/Malzemeiste/Malzemeiste_Release_Version/Malzeme.jks')
+            storePassword 'Malzeme2016'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.bilgiyazan.malzemeiste"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.2"
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.MalzemeKey
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('com.mikepenz:materialdrawer:5.8.0@aar') {
+        transitive = true
+    }
+    compile 'com.github.johnpersano:supertoasts:2.0'
+    // or
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.tonicartos:superslim:0.4.13'
+    compile 'com.bignerdranch.android:expandablerecyclerview:3.0.0-RC1'
+    compile 'com.github.medyo:fancybuttons:1.8.3'
+    compile 'com.github.arimorty:floatingsearchview:2.0.3'
+    compile 'com.roughike:bottom-bar:2.0.2'
+    compile 'com.google.firebase:firebase-database:10.2.1'
+    compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    compile 'com.github.castorflex.smoothprogressbar:library-circular:1.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    compile 'com.google.android.gms:play-services-maps:10.2.1'
+    compile 'com.google.android.gms:play-services-location:10.2.1'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.2.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.orhanobut:dialogplus:1.11@aar'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

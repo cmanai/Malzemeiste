@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/splash_screen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/md_white_1000">
+
+
+    <TextView
+            android:id="@+id/Copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorText"
+            android:text="Copyright © 2016 Malzemeiste.net"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="12sp"
+            />
+
+
+    <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/logo"
+            android:layout_margin="20dp"
+            android:layout_height="100dp"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_malzemeiste"/>
+
+    <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_logo"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/color1"
+
+            android:textAlignment="center"
+            android:text="ÜÇĞE"
+            />-->
+
+    <!--  <fr.castorflex.android.circularprogressbar.CircularProgressBar
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="35dp"
+              android:layout_centerHorizontal="true"
+              android:layout_height="35dp"
+              android:layout_marginTop="70dp"
+              android:indeterminate="true"
+              app:cpb_color="@color/md_white_1000"
+              android:layout_below="@+id/logo"
+              app:cpb_rotation_speed="1.0"
+              app:cpb_sweep_speed="1.0"
+              app:cpb_stroke_width="4dp"
+              app:cpb_min_sweep_angle="10"
+              app:cpb_max_sweep_angle="300"
+              />-->
+
+    <ImageView
+            android:id="@+id/Name_App"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_below="@+id/logo"
+            android:textColor="@color/md_white_1000"
+            android:src="@drawable/title_splash"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_alignTop="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+
+</RelativeLayout>

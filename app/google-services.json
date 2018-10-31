@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "330855123567",
+    "firebase_url": "https://malzemeiste-4a37b.firebaseio.com",
+    "project_id": "malzemeiste-4a37b",
+    "storage_bucket": "malzemeiste-4a37b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330855123567:android:36f7259563f5997d",
+        "android_client_info": {
+          "package_name": "com.bilgiyazan.malzemeiste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330855123567-j1t2jjobhcii7708aspoo298pqphnov4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bilgiyazan.malzemeiste",
+            "certificate_hash": "90C1BDEA96DFD30F9745A93FF157FDEBBF960940"
+          }
+        },
+        {
+          "client_id": "330855123567-861etslvg6p08gi8gecufplvi4sl7001.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnRYEGjSkc5_J0vSSbFvLIVUHuYF4KuPg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330855123567-861etslvg6p08gi8gecufplvi4sl7001.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

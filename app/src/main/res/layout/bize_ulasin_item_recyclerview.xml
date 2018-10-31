@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/cardMarginVertical"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        android:paddingBottom="50dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="0dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_marginTop="25dp"
+                android:layout_width="100dp"
+                android:layout_height="85dp"
+
+
+                android:src="@drawable/icon_malzemeiste"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8.5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="8.5dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Ad-Soyad*"
+                android:inputType="textCapSentences|textLongMessage"
+                android:layout_below="@+id/image"
+
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_clearButton="true"
+                app:met_errorColor="#f8a573"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimary"
+                app:met_helperTextColor="@color/colorPrimary"
+                app:met_iconPadding="0dp"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_textColor="@color/colorText"
+                app:met_textColorHint="@color/colorPrimary"
+                app:met_underlineColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8.5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="8.5dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="E-mail*"
+                android:layout_below="@+id/name"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress|textLongMessage"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_clearButton="true"
+                app:met_errorColor="#f8a573"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimary"
+                app:met_helperTextColor="@color/colorPrimary"
+                app:met_iconPadding="0dp"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_textColor="@color/colorText"
+                app:met_textColorHint="@color/colorPrimary"
+                app:met_underlineColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Konu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8.5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="8.5dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Konu*"
+                android:layout_below="@+id/email"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_clearButton="true"
+                app:met_errorColor="#f8a573"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimary"
+                app:met_helperTextColor="@color/colorPrimary"
+                app:met_iconPadding="0dp"
+                android:inputType="textCapSentences|textLongMessage"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_textColor="@color/colorText"
+                app:met_textColorHint="@color/colorPrimary"
+                app:met_underlineColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Mesaj*"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_clearButton="true"
+                app:met_errorColor="#f8a573"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimary"
+                app:met_helperTextColor="@color/colorPrimary"
+                app:met_iconPadding="0dp"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_textColor="@color/colorText"
+                app:met_textColorHint="@color/colorPrimary"
+                app:met_underlineColor="@color/colorPrimary"
+                android:layout_below="@+id/Konu"
+                android:layout_alignLeft="@+id/Konu"
+                android:layout_alignStart="@+id/Konu"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/az"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8.5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="8.5dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Mesaj*"
+                android:visibility="invisible"
+                android:inputType="textCapSentences|textImeMultiLine"
+                android:layout_below="@+id/send_form"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_clearButton="true"
+                app:met_errorColor="#f8a573"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimary"
+                app:met_helperTextColor="@color/colorPrimary"
+                app:met_iconPadding="0dp"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_textColor="@color/colorText"
+                android:layout_alignParentBottom="true"
+                app:met_textColorHint="@color/colorPrimary"
+                app:met_underlineColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"/>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/send_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="45dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/message"
+                fancy:fb_borderColor="#f8a573"
+                fancy:fb_defaultColor="#f8a573"
+                fancy:fb_focusColor="#fff"
+                fancy:fb_iconPosition="left"
+                android:gravity="center"
+
+                fancy:fb_radius="30dp"
+                fancy:fb_text="Gönder"
+                fancy:fb_textColor="#FFFFFF"
+                />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+        <!--
+                app:met_iconLeft="@drawable/ic_account_box_white_48dp"
+        -->
